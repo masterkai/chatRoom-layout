@@ -1,0 +1,85 @@
+html,
+body {
+  background: white;
+  height: 100%;
+  padding: 0;
+  margin: 0; }
+
+.outterBox {
+  height: 100%; }
+  .outterBox .nav {
+    height: 40px;
+    background-color: aqua; }
+  .outterBox .chatContentBox {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background-color: antiquewhite;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    overflow: auto;
+    height: calc(100% - 110px); }
+    .outterBox .chatContentBox .item {
+      padding: 10px 15px;
+      -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+      flex: 1 1 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      width: auto;
+      height: auto;
+      border-bottom: 1px solid red; }
+      .outterBox .chatContentBox .item .avatar {
+        padding: 0;
+        -webkit-box-flex: 1;
+        -ms-flex: 1 0 auto;
+        flex: 1 0 auto; }
+      .outterBox .chatContentBox .item .messageBox {
+        -webkit-box-flex: 1;
+        -ms-flex: 1 1 88%;
+        flex: 1 1 88%;
+        width: auto; }
+        .outterBox .chatContentBox .item .messageBox .identity {
+          margin-bottom: 5px;
+          font-size: 8px; }
+        .outterBox .chatContentBox .item .messageBox .message {
+          padding: 10px;
+          background-color: azure; }
+  .outterBox .inputBox {
+    padding: 0 20px;
+    background-color: darkgray;
+    height: 70px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .outterBox .inputBox .saySomething {
+      -webkit-box-flex: 1;
+      -ms-flex: 1 1 60%;
+      flex: 1 1 60%;
+      height: 38px; }
+    .outterBox .inputBox .btn {
+      margin-left: 12px;
+      height: 38px;
+      width: 38px; }
+
+/*# sourceMappingURL=style.css.map */

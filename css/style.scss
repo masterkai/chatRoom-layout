@@ -1,0 +1,69 @@
+html,
+body {
+  background: white;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.outterBox {
+  height: 100%;
+  .nav {
+    height: 40px;
+    background-color: aqua;
+  }
+
+  .chatContentBox {
+    flex: 1;
+    background-color: antiquewhite;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    height: calc(100% - 110px);
+    .item {
+      padding: 10px 15px;
+      flex: 1 1 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      width: auto;
+      height: auto;
+      border-bottom: 1px solid red;
+      .avatar {
+        padding: 0;
+        flex: 1 0 auto;
+      }
+      .messageBox {
+        flex: 1 1 88%;
+        width: auto;
+        .identity {
+          margin-bottom: 5px;
+          font-size: 8px;
+        }
+        .message {
+          padding: 10px;
+          background-color: azure;
+        }
+      }
+    }
+  }
+
+  .inputBox {
+    padding: 0 20px;
+    background-color: darkgray;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .saySomething {
+      flex: 1 1 60%;
+      height: 38px;
+    }
+    .btn {
+      margin-left: 12px;
+      height: 38px;
+      width: 38px;
+    }
+  }
+}
