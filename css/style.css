@@ -24,6 +24,8 @@ body {
     -ms-flex-direction: column;
     flex-direction: column;
     overflow: auto;
+    height: -moz-calc(100% - 110px);
+    height: -webkit-calc(100% - 110px);
     height: calc(100% - 110px); }
     .outterBox .chatContentBox .item {
       padding: 10px 15px;
